@@ -1,6 +1,10 @@
 language: python
 
 build:
+  pre_ci_boot:
+    image_name: drydock/u16
+    image_tag: v6.4.4
+    pull: true
+    
   ci:   
     - python --version 
-    
